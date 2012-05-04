@@ -228,6 +228,7 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe stre
 - (void)sessionDidConnect:(OTSession*)session
 {
     _disconnectButton.hidden = NO;
+    _connectButton.hidden = YES;
     _publishButton.hidden = NO;
     [self setStatusLabel];
     NSLog(@"sessionDidConnect: %@", session.sessionId);
@@ -238,16 +239,23 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe stre
 - (void)sessionDidDisconnect:(OTSession*)session 
 {
     _statusLabel.text = @"Disconnected from session.";
+    NSLog(@"sessionDidDisconnect: %@", session.sessionId);
     _publishButton.hidden = YES;
     _unpublishButton.hidden = YES;
-    NSLog(@"sessionDidDisconnect: %@", session.sessionId);    
+    _disconnectButton.hidden = YES;
     _connectButton.hidden = NO;
 }
 
-- (void)session:(OTSession*)session didFailWithError:(NSError*)error
+- (void)session:(OTSession*)session didFailWithError:(OTError*)error
 {
     _connectButton.hidden = NO;
-    NSLog(@"session:didFailWithError: %@", error.description);    
+    NSLog(@"session: didFailWithError:");
+    NSLog(@"- error code: %d", error.code);
+    NSLog(@"- description: %@", error.localizedDescription);
+    _publishButton.hidden = YES;
+    _unpublishButton.hidden = YES;
+    _disconnectButton.hidden = YES;
+    _connectButton.hidden = NO;
 }
 
 - (void)session:(OTSession*)mySession didReceiveStream:(OTStream*)stream
@@ -294,8 +302,11 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe stre
 
 #pragma mark - OTPublisherDelegate methods
 
-- (void)publisher:(OTPublisher*)publisher didFailWithError:(NSError*) error {
-    NSLog(@"publisher: %@ didFailWithError: %@", publisher, error.description);
+- (void)publisher:(OTPublisher*)publisher didFailWithError:(OTError*) error
+{
+    NSLog(@"publisher: %@ didFailWithError:", publisher);
+    NSLog(@"- error code: %d", error.code);
+    NSLog(@"- description: %@", error.localizedDescription);
 }
 
 - (void)publisherDidStartStreaming:(OTPublisher *)publisher
@@ -326,9 +337,11 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe stre
     _unsubscribeButton.hidden = NO;
 }
 
-- (void)subscriber:(OTSubscriber *)subscriber didFailWithError:(NSError *)error
+- (void)subscriber:(OTSubscriber *)subscriber didFailWithError:(OTError *)error
 {
-    NSLog(@"subscriber: %@ didFailWithError: %@", subscriber.stream.streamId, error.description);
+    NSLog(@"subscriber: %@ didFailWithError: ", subscriber.stream.streamId);
+    NSLog(@"- code: %d", error.code);
+    NSLog(@"- description: %@", error.localizedDescription);
 }
 
 @end

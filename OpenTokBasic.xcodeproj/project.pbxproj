@@ -35,6 +35,7 @@
 		1F68A66B14DC62D7004C8394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68A64914DC62D7004C8394 /* Foundation.framework */; };
 		1F68A67314DC62D7004C8394 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F68A67114DC62D7004C8394 /* InfoPlist.strings */; };
 		1F68A67614DC62D7004C8394 /* OpenTokBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F68A67514DC62D7004C8394 /* OpenTokBasicTests.m */; };
+		1F6FBCB815545DB600FA9225 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FBCB715545DB600FA9225 /* opentok.bundle */; };
 		D4F4DA86151983F10006B5C5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F4DA85151983F10006B5C5 /* CoreTelephony.framework */; };
 		D4F4DA90151985F10006B5C5 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F4DA8F151985F10006B5C5 /* Opentok.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		1F68A67214DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F68A67414DC62D7004C8394 /* OpenTokBasicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenTokBasicTests.h; sourceTree = "<group>"; };
 		1F68A67514DC62D7004C8394 /* OpenTokBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTokBasicTests.m; sourceTree = "<group>"; };
+		1F6FBCB715545DB600FA9225 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = "../../opentok-ios-sdk/Opentok.framework/Versions/A/Resources/opentok.bundle"; sourceTree = "<group>"; };
 		D4F4DA85151983F10006B5C5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D4F4DA8F151985F10006B5C5 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opentok.framework; path = "opentok-ios-sdk/Opentok.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +181,7 @@
 			children = (
 				1F68A65614DC62D7004C8394 /* AppDelegate.h */,
 				1F68A65714DC62D7004C8394 /* AppDelegate.m */,
+				1F6FBCB715545DB600FA9225 /* opentok.bundle */,
 				1F68A65914DC62D7004C8394 /* MainStoryboard_iPhone.storyboard */,
 				1F68A65C14DC62D7004C8394 /* MainStoryboard_iPad.storyboard */,
 				1F68A65F14DC62D7004C8394 /* ViewController.h */,
@@ -291,6 +294,7 @@
 				1F68A65214DC62D7004C8394 /* InfoPlist.strings in Resources */,
 				1F68A65B14DC62D7004C8394 /* MainStoryboard_iPhone.storyboard in Resources */,
 				1F68A65E14DC62D7004C8394 /* MainStoryboard_iPad.storyboard in Resources */,
+				1F6FBCB815545DB600FA9225 /* opentok.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
