@@ -56,7 +56,7 @@ the Apple iOS Dev Center.
 
 10. You can generate a unique session ID at this URL:
 
-		http://staging.tokbox.com/hl/session/create
+		https://dashboard.tokbox.com/projects
 
 	Change the `kSessionId` constant in the ViewController.m file and the `sessionId` to the new session ID. 
 
