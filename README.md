@@ -15,7 +15,8 @@ the OpenTokBasic sample app lets you do the following:
 - Unsubscribe from streams
 - Disconnect from a session
 
-Before you test the sample app, be sure to read [Using the OpenTok iOS SDK](http://www.tokbox.com/opentok/ios/docs/docs/Using_iOS.html). Also, you may want to first look
+Before you test the sample app, be sure to read the README file for [the OpenTok iOS SDK](https://github.com/opentok/opentok-ios-sdk)
+or [the OpenTok on WebRTC iOS SDK](https://github.com/opentok/opentok-ios-sdk-webrtc). Also, you may want to first look
 at the [OpenTokHelloWorld](https://github.com/opentok/OpenTok-iOS-Hello-World) sample app.
 
 Testing the sample app
