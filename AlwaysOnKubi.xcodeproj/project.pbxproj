@@ -66,21 +66,21 @@
 		1F43F90F14DC6AE5006CCCD3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1F43F91014DC6AE5006CCCD3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1F43F91214DC6AE5006CCCD3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1F68A64314DC62D7004C8394 /* OpenTokBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F68A64314DC62D7004C8394 /* AlwaysOnKubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysOnKubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F68A64714DC62D7004C8394 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F68A64914DC62D7004C8394 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F68A64B14DC62D7004C8394 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1F68A64F14DC62D7004C8394 /* OpenTokBasic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTokBasic-Info.plist"; sourceTree = "<group>"; };
+		1F68A64F14DC62D7004C8394 /* AlwaysOnKubi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlwaysOnKubi-Info.plist"; sourceTree = "<group>"; };
 		1F68A65114DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F68A65314DC62D7004C8394 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F68A65514DC62D7004C8394 /* OpenTokBasic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenTokBasic-Prefix.pch"; sourceTree = "<group>"; };
+		1F68A65514DC62D7004C8394 /* AlwaysOnKubi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlwaysOnKubi-Prefix.pch"; sourceTree = "<group>"; };
 		1F68A65614DC62D7004C8394 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F68A65714DC62D7004C8394 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F68A65A14DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1F68A65D14DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1F68A65F14DC62D7004C8394 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1F68A66014DC62D7004C8394 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1F68A66714DC62D7004C8394 /* OpenTokBasicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTokBasicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F68A66714DC62D7004C8394 /* AlwaysOnKubiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysOnKubiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F68A67014DC62D7004C8394 /* OpenTokBasicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTokBasicTests-Info.plist"; sourceTree = "<group>"; };
 		1F68A67214DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F68A67414DC62D7004C8394 /* OpenTokBasicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenTokBasicTests.h; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		1F68A64414DC62D7004C8394 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F68A64314DC62D7004C8394 /* OpenTokBasic.app */,
-				1F68A66714DC62D7004C8394 /* OpenTokBasicTests.octest */,
+				1F68A64314DC62D7004C8394 /* AlwaysOnKubi.app */,
+				1F68A66714DC62D7004C8394 /* AlwaysOnKubiTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,10 +194,10 @@
 		1F68A64E14DC62D7004C8394 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F68A64F14DC62D7004C8394 /* OpenTokBasic-Info.plist */,
+				1F68A64F14DC62D7004C8394 /* AlwaysOnKubi-Info.plist */,
 				1F68A65014DC62D7004C8394 /* InfoPlist.strings */,
 				1F68A65314DC62D7004C8394 /* main.m */,
-				1F68A65514DC62D7004C8394 /* OpenTokBasic-Prefix.pch */,
+				1F68A65514DC62D7004C8394 /* AlwaysOnKubi-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F68A64214DC62D7004C8394 /* OpenTokBasic */ = {
+		1F68A64214DC62D7004C8394 /* AlwaysOnKubi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F68A67914DC62D7004C8394 /* Build configuration list for PBXNativeTarget "OpenTokBasic" */;
+			buildConfigurationList = 1F68A67914DC62D7004C8394 /* Build configuration list for PBXNativeTarget "AlwaysOnKubi" */;
 			buildPhases = (
 				1F68A63F14DC62D7004C8394 /* Sources */,
 				1F68A64014DC62D7004C8394 /* Frameworks */,
@@ -236,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = OpenTokBasic;
+			name = AlwaysOnKubi;
 			productName = OpenTokBasic;
-			productReference = 1F68A64314DC62D7004C8394 /* OpenTokBasic.app */;
+			productReference = 1F68A64314DC62D7004C8394 /* AlwaysOnKubi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F68A66614DC62D7004C8394 /* OpenTokBasicTests */ = {
+		1F68A66614DC62D7004C8394 /* AlwaysOnKubiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F68A67C14DC62D7004C8394 /* Build configuration list for PBXNativeTarget "OpenTokBasicTests" */;
+			buildConfigurationList = 1F68A67C14DC62D7004C8394 /* Build configuration list for PBXNativeTarget "AlwaysOnKubiTests" */;
 			buildPhases = (
 				1F68A66214DC62D7004C8394 /* Sources */,
 				1F68A66314DC62D7004C8394 /* Frameworks */,
@@ -255,9 +255,9 @@
 			dependencies = (
 				1F68A66D14DC62D7004C8394 /* PBXTargetDependency */,
 			);
-			name = OpenTokBasicTests;
+			name = AlwaysOnKubiTests;
 			productName = OpenTokBasicTests;
-			productReference = 1F68A66714DC62D7004C8394 /* OpenTokBasicTests.octest */;
+			productReference = 1F68A66714DC62D7004C8394 /* AlwaysOnKubiTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +268,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 1F68A63D14DC62D7004C8394 /* Build configuration list for PBXProject "OpenTokBasic" */;
+			buildConfigurationList = 1F68A63D14DC62D7004C8394 /* Build configuration list for PBXProject "AlwaysOnKubi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,8 +280,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F68A64214DC62D7004C8394 /* OpenTokBasic */,
-				1F68A66614DC62D7004C8394 /* OpenTokBasicTests */,
+				1F68A64214DC62D7004C8394 /* AlwaysOnKubi */,
+				1F68A66614DC62D7004C8394 /* AlwaysOnKubiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 /* Begin PBXTargetDependency section */
 		1F68A66D14DC62D7004C8394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F68A64214DC62D7004C8394 /* OpenTokBasic */;
+			target = 1F68A64214DC62D7004C8394 /* AlwaysOnKubi */;
 			targetProxy = 1F68A66C14DC62D7004C8394 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,15 +448,15 @@
 					"\"$(SRCROOT)/opentok-ios-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenTokBasic/OpenTokBasic-Prefix.pch";
-				INFOPLIST_FILE = "OpenTokBasic/OpenTokBasic-Info.plist";
+				GCC_PREFIX_HEADER = "OpenTokBasic/AlwaysOnKubi-Prefix.pch";
+				INFOPLIST_FILE = "OpenTokBasic/AlwaysOnKubi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/OpenTokBasic\"",
 					"\"$(SRCROOT)/../OpentokHelloWorld/libOpentok\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AlwaysOnKubi;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,15 +474,15 @@
 					"\"$(SRCROOT)/opentok-ios-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenTokBasic/OpenTokBasic-Prefix.pch";
-				INFOPLIST_FILE = "OpenTokBasic/OpenTokBasic-Info.plist";
+				GCC_PREFIX_HEADER = "OpenTokBasic/AlwaysOnKubi-Prefix.pch";
+				INFOPLIST_FILE = "OpenTokBasic/AlwaysOnKubi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/OpenTokBasic\"",
 					"\"$(SRCROOT)/../OpentokHelloWorld/libOpentok\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AlwaysOnKubi;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -499,7 +499,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTokBasic/OpenTokBasic-Prefix.pch";
 				INFOPLIST_FILE = "OpenTokBasicTests/OpenTokBasicTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AlwaysOnKubiTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -516,7 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTokBasic/OpenTokBasic-Prefix.pch";
 				INFOPLIST_FILE = "OpenTokBasicTests/OpenTokBasicTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AlwaysOnKubiTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -525,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F68A63D14DC62D7004C8394 /* Build configuration list for PBXProject "OpenTokBasic" */ = {
+		1F68A63D14DC62D7004C8394 /* Build configuration list for PBXProject "AlwaysOnKubi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F68A67714DC62D7004C8394 /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F68A67914DC62D7004C8394 /* Build configuration list for PBXNativeTarget "OpenTokBasic" */ = {
+		1F68A67914DC62D7004C8394 /* Build configuration list for PBXNativeTarget "AlwaysOnKubi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F68A67A14DC62D7004C8394 /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F68A67C14DC62D7004C8394 /* Build configuration list for PBXNativeTarget "OpenTokBasicTests" */ = {
+		1F68A67C14DC62D7004C8394 /* Build configuration list for PBXNativeTarget "AlwaysOnKubiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F68A67D14DC62D7004C8394 /* Debug */,

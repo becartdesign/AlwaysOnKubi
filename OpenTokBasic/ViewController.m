@@ -22,10 +22,10 @@
 static int topOffset = 90;
 static double widgetHeight = 240;
 static double widgetWidth = 320;
-static NSString* const kApiKey = @"1127";
-static NSString* const kToken = @"devtoken";
-static NSString* const kSessionId = @"2_MX4wfn4yMDEyLTAyLTA0IDAyOjIxOjI0LjE0ODMwNCswMDowMH4wLjQ2MDExMzM1NDczOH4";
-static bool subscribeToSelf = YES; // Change to NO if you want to subscribe streams other than your own
+static NSString* const kApiKey = @"31458722";
+static NSString* const kToken = @"T1==cGFydG5lcl9pZD0zMTQ1ODcyMiZzZGtfdmVyc2lvbj10YnJ1YnktdGJyYi12MC45MS4yMDExLTAyLTE3JnNpZz0yMDgzODEyNTBhYmFhOGRhMTM0ZWM5ODkyMWIyZmNjN2IxMWZkZjQwOnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9MV9NWDR6TVRRMU9EY3lNbjR4TWpjdU1DNHdMakYtVkdoMUlFcDFiaUF3TmlBeE1qb3hNVG93T0NCUVJGUWdNakF4TTM0d0xqazFNVEF3TkRJM2ZnJmNyZWF0ZV90aW1lPTEzNzA1NDczMDImbm9uY2U9MC42NDYwMDg2MzIxNjEyMjE3JmV4cGlyZV90aW1lPTEzNzMxMzkzMDImY29ubmVjdGlvbl9kYXRhPQ==";
+static NSString* const kSessionId = @"1_MX4zMTQ1ODcyMn4xMjcuMC4wLjF-VGh1IEp1biAwNiAxMjoxMTowOCBQRFQgMjAxM34wLjk1MTAwNDI3fg";
+static bool subscribeToSelf = NO; // Change to NO if you want to subscribe streams other than your own
 
 - (void)didReceiveMemoryWarning
 {
