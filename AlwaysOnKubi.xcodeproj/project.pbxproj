@@ -11,10 +11,8 @@
 		1F43F91414DC6AE5006CCCD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90314DC6AE5006CCCD3 /* AVFoundation.framework */; };
 		1F43F91514DC6AE5006CCCD3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90414DC6AE5006CCCD3 /* CFNetwork.framework */; };
 		1F43F91614DC6AE5006CCCD3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90514DC6AE5006CCCD3 /* CoreAudio.framework */; };
-		1F43F91714DC6AE5006CCCD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90614DC6AE5006CCCD3 /* CoreGraphics.framework */; };
 		1F43F91814DC6AE5006CCCD3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90714DC6AE5006CCCD3 /* CoreMedia.framework */; };
 		1F43F91914DC6AE5006CCCD3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90814DC6AE5006CCCD3 /* CoreVideo.framework */; };
-		1F43F91A14DC6AE5006CCCD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90914DC6AE5006CCCD3 /* Foundation.framework */; };
 		1F43F91C14DC6AE5006CCCD3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90B14DC6AE5006CCCD3 /* libstdc++.dylib */; };
 		1F43F91D14DC6AE5006CCCD3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90C14DC6AE5006CCCD3 /* libz.dylib */; };
 		1F43F91E14DC6AE5006CCCD3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43F90D14DC6AE5006CCCD3 /* MobileCoreServices.framework */; };
@@ -33,9 +31,6 @@
 		1F68A66114DC62D7004C8394 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F68A66014DC62D7004C8394 /* ViewController.m */; };
 		1F68A66A14DC62D7004C8394 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68A64714DC62D7004C8394 /* UIKit.framework */; };
 		1F68A66B14DC62D7004C8394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68A64914DC62D7004C8394 /* Foundation.framework */; };
-		1F68A67314DC62D7004C8394 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F68A67114DC62D7004C8394 /* InfoPlist.strings */; };
-		1F68A67614DC62D7004C8394 /* OpenTokBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F68A67514DC62D7004C8394 /* OpenTokBasicTests.m */; };
-		1F6FBCB815545DB600FA9225 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FBCB715545DB600FA9225 /* opentok.bundle */; };
 		D4F4DA86151983F10006B5C5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F4DA85151983F10006B5C5 /* CoreTelephony.framework */; };
 		D4F4DA90151985F10006B5C5 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F4DA8F151985F10006B5C5 /* Opentok.framework */; };
 /* End PBXBuildFile section */
@@ -79,13 +74,8 @@
 		1F68A65A14DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1F68A65D14DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1F68A65F14DC62D7004C8394 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F68A66014DC62D7004C8394 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F68A66014DC62D7004C8394 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; usesTabs = 1; };
 		1F68A66714DC62D7004C8394 /* AlwaysOnKubiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysOnKubiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F68A67014DC62D7004C8394 /* OpenTokBasicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTokBasicTests-Info.plist"; sourceTree = "<group>"; };
-		1F68A67214DC62D7004C8394 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1F68A67414DC62D7004C8394 /* OpenTokBasicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenTokBasicTests.h; sourceTree = "<group>"; };
-		1F68A67514DC62D7004C8394 /* OpenTokBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTokBasicTests.m; sourceTree = "<group>"; };
-		1F6FBCB715545DB600FA9225 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = "../opentok-ios-sdk/Opentok.framework/Versions/A/Resources/opentok.bundle"; sourceTree = "<group>"; };
 		D4F4DA85151983F10006B5C5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D4F4DA8F151985F10006B5C5 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opentok.framework; path = "opentok-ios-sdk/Opentok.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,11 +92,9 @@
 				1F43F91414DC6AE5006CCCD3 /* AVFoundation.framework in Frameworks */,
 				1F43F91514DC6AE5006CCCD3 /* CFNetwork.framework in Frameworks */,
 				1F43F91614DC6AE5006CCCD3 /* CoreAudio.framework in Frameworks */,
-				1F43F91714DC6AE5006CCCD3 /* CoreGraphics.framework in Frameworks */,
 				1F43F91814DC6AE5006CCCD3 /* CoreMedia.framework in Frameworks */,
 				D4F4DA86151983F10006B5C5 /* CoreTelephony.framework in Frameworks */,
 				1F43F91914DC6AE5006CCCD3 /* CoreVideo.framework in Frameworks */,
-				1F43F91A14DC6AE5006CCCD3 /* Foundation.framework in Frameworks */,
 				1F43F91C14DC6AE5006CCCD3 /* libstdc++.dylib in Frameworks */,
 				1F43F91D14DC6AE5006CCCD3 /* libz.dylib in Frameworks */,
 				1F43F91E14DC6AE5006CCCD3 /* MobileCoreServices.framework in Frameworks */,
@@ -134,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				1F68A64D14DC62D7004C8394 /* OpenTokBasic */,
-				1F68A66E14DC62D7004C8394 /* OpenTokBasicTests */,
 				1F68A64614DC62D7004C8394 /* Frameworks */,
 				1F68A64414DC62D7004C8394 /* Products */,
 			);
@@ -181,7 +168,6 @@
 			children = (
 				1F68A65614DC62D7004C8394 /* AppDelegate.h */,
 				1F68A65714DC62D7004C8394 /* AppDelegate.m */,
-				1F6FBCB715545DB600FA9225 /* opentok.bundle */,
 				1F68A65914DC62D7004C8394 /* MainStoryboard_iPhone.storyboard */,
 				1F68A65C14DC62D7004C8394 /* MainStoryboard_iPad.storyboard */,
 				1F68A65F14DC62D7004C8394 /* ViewController.h */,
@@ -198,25 +184,6 @@
 				1F68A65014DC62D7004C8394 /* InfoPlist.strings */,
 				1F68A65314DC62D7004C8394 /* main.m */,
 				1F68A65514DC62D7004C8394 /* AlwaysOnKubi-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1F68A66E14DC62D7004C8394 /* OpenTokBasicTests */ = {
-			isa = PBXGroup;
-			children = (
-				1F68A67414DC62D7004C8394 /* OpenTokBasicTests.h */,
-				1F68A67514DC62D7004C8394 /* OpenTokBasicTests.m */,
-				1F68A66F14DC62D7004C8394 /* Supporting Files */,
-			);
-			path = OpenTokBasicTests;
-			sourceTree = "<group>";
-		};
-		1F68A66F14DC62D7004C8394 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F68A67014DC62D7004C8394 /* OpenTokBasicTests-Info.plist */,
-				1F68A67114DC62D7004C8394 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,7 +233,7 @@
 		1F68A63A14DC62D7004C8394 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 1F68A63D14DC62D7004C8394 /* Build configuration list for PBXProject "AlwaysOnKubi" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,7 +261,6 @@
 				1F68A65214DC62D7004C8394 /* InfoPlist.strings in Resources */,
 				1F68A65B14DC62D7004C8394 /* MainStoryboard_iPhone.storyboard in Resources */,
 				1F68A65E14DC62D7004C8394 /* MainStoryboard_iPad.storyboard in Resources */,
-				1F6FBCB815545DB600FA9225 /* opentok.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F68A67314DC62D7004C8394 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F68A67614DC62D7004C8394 /* OpenTokBasicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,14 +342,6 @@
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		1F68A67114DC62D7004C8394 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F68A67214DC62D7004C8394 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -395,6 +351,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -408,6 +368,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -421,12 +382,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

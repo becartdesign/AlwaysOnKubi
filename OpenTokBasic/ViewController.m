@@ -19,9 +19,18 @@
     UIButton* _unsubscribeButton;
     UILabel* _statusLabel;
 }
+
+static int selfViewTop = 558;
+static int selfViewLeft = 774;
+static double selfViewHeight = 180;
+static double selfViewWidth = 240;
+
 static int topOffset = 90;
-static double widgetHeight = 240;
-static double widgetWidth = 320;
+static double widgetHeight = 648;
+static double widgetWidth = 1004;
+
+static int maxConnections = 2; // self connection + 1
+
 static NSString* const kApiKey = @"31458722";
 static NSString* const kToken = @"T1==cGFydG5lcl9pZD0zMTQ1ODcyMiZzZGtfdmVyc2lvbj10YnJ1YnktdGJyYi12MC45MS4yMDExLTAyLTE3JnNpZz0yMDgzODEyNTBhYmFhOGRhMTM0ZWM5ODkyMWIyZmNjN2IxMWZkZjQwOnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9MV9NWDR6TVRRMU9EY3lNbjR4TWpjdU1DNHdMakYtVkdoMUlFcDFiaUF3TmlBeE1qb3hNVG93T0NCUVJGUWdNakF4TTM0d0xqazFNVEF3TkRJM2ZnJmNyZWF0ZV90aW1lPTEzNzA1NDczMDImbm9uY2U9MC42NDYwMDg2MzIxNjEyMjE3JmV4cGlyZV90aW1lPTEzNzMxMzkzMDImY29ubmVjdGlvbl9kYXRhPQ==";
 static NSString* const kSessionId = @"1_MX4zMTQ1ODcyMn4xMjcuMC4wLjF-VGh1IEp1biAwNiAxMjoxMTowOCBQRFQgMjAxM34wLjk1MTAwNDI3fg";
@@ -39,6 +48,7 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
 {
     [super viewDidLoad];
     [self createUI];
+    [self doConnect];
 }
 
 - (void)createUI
@@ -194,12 +204,12 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
 
 - (void)doPublish
 {
-    _publisher = [[OTPublisher alloc] initWithDelegate:self name:UIDevice.currentDevice.name];
-    _publisher.publishAudio = YES;
-    _publisher.publishVideo = YES;
-    [_session publish:_publisher];
-    [self.view addSubview:_publisher.view];
-    [_publisher.view setFrame:CGRectMake(10, topOffset, widgetWidth, widgetHeight)];
+	_publisher = [[OTPublisher alloc] initWithDelegate:self name:UIDevice.currentDevice.name];
+	_publisher.publishAudio = YES;
+	_publisher.publishVideo = YES;
+	[_session publish:_publisher];
+	[self.view addSubview:_publisher.view];
+	[_publisher.view setFrame:CGRectMake(selfViewLeft, selfViewTop, selfViewWidth, selfViewHeight)];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -234,6 +244,7 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
     NSLog(@"sessionDidConnect: %@", session.sessionId);
     NSLog(@"- connectionId: %@", session.connection.connectionId);
     NSLog(@"- creationTime: %@", session.connection.creationTime);
+    [self doPublish]; // auto publish on connect
 }
 
 - (void)sessionDidDisconnect:(OTSession*)session 
@@ -271,9 +282,9 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
     NSLog(@"- name %@", stream.name);
     NSLog(@"- hasAudio %@", (stream.hasAudio ? @"YES" : @"NO"));
     NSLog(@"- hasVideo %@", (stream.hasVideo ? @"YES" : @"NO"));
-    if ( (subscribeToSelf && [stream.connection.connectionId isEqualToString: _session.connection.connectionId])
+    if ( (subscribeToSelf && [stream.connection.connectionId isEqualToString: _session.connection.connectionId]) // yes to self, is self
          ||
-         (!subscribeToSelf && ![stream.connection.connectionId isEqualToString: _session.connection.connectionId])
+         (!subscribeToSelf && ![stream.connection.connectionId isEqualToString: _session.connection.connectionId]) // no to self, is not self
        ) {
         if (!_subscriber) {
             _subscriber = [[OTSubscriber alloc] initWithStream:stream delegate:self];
@@ -296,7 +307,8 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
         && [_subscriber.stream.streamId isEqualToString: stream.streamId]) {
             _subscriber = nil;
             _unsubscribeButton.hidden = YES;
-            [self updateSubscriber];
+            //[self updateSubscriber];
+            [_subscriber close];
     }
 }
 
@@ -328,8 +340,9 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
 - (void)subscriberDidConnectToStream:(OTSubscriber*)subscriber
 {
     NSLog(@"subscriberDidConnectToStream (%@)", subscriber.stream.connection.connectionId);
-    [subscriber.view setFrame:CGRectMake(10, topOffset + widgetHeight, widgetWidth, widgetHeight)];
+    [subscriber.view setFrame:CGRectMake(10, topOffset, widgetWidth, widgetHeight)];
     [self.view addSubview:subscriber.view];
+	[self.view sendSubviewToBack:subscriber.view];
 }
 
 - (void)subscriberVideoDataReceived:(OTSubscriber*)subscriber {

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1F68A64214DC62D7004C8394"
-               BuildableName = "OpenTokBasic.app"
+               BuildableName = "AlwaysOnKubi.app"
                BlueprintName = "AlwaysOnKubi"
                ReferencedContainer = "container:AlwaysOnKubi.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1F68A66614DC62D7004C8394"
-               BuildableName = "OpenTokBasicTests.octest"
+               BuildableName = "AlwaysOnKubiTests.octest"
                BlueprintName = "AlwaysOnKubiTests"
                ReferencedContainer = "container:AlwaysOnKubi.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F68A64214DC62D7004C8394"
-            BuildableName = "OpenTokBasic.app"
+            BuildableName = "AlwaysOnKubi.app"
             BlueprintName = "AlwaysOnKubi"
             ReferencedContainer = "container:AlwaysOnKubi.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F68A64214DC62D7004C8394"
-            BuildableName = "OpenTokBasic.app"
+            BuildableName = "AlwaysOnKubi.app"
             BlueprintName = "AlwaysOnKubi"
             ReferencedContainer = "container:AlwaysOnKubi.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F68A64214DC62D7004C8394"
-            BuildableName = "OpenTokBasic.app"
+            BuildableName = "AlwaysOnKubi.app"
             BlueprintName = "AlwaysOnKubi"
             ReferencedContainer = "container:AlwaysOnKubi.xcodeproj">
          </BuildableReference>
